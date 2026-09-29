@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Local fishing spots, weather, and simple fishing tips for Corpus Christi.">
+    <title>CorpusCast | Corpus Christi fishing</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-name" href="#main">CorpusCast</a>
+      <p>Fishing around Corpus Christi</p>
+    </header>
+
+    <main id="main" class="page-content">
+      <section class="spot-picker" aria-labelledby="spot-heading">
+        <div>
+          <h1 id="spot-heading">Choose a fishing spot</h1>
+          <p>Select a location to see its conditions and fishing notes.</p>
+        </div>
+
+        <label for="spot-select">Fishing spot</label>
+        <select id="spot-select" name="spot">
+          <option value="">Loading fishing spots…</option>
+        </select>
+        <p id="spot-status" class="status" role="status" aria-live="polite">
+          Fishing spots will appear here.
+        </p>
+      </section>
+
+      <div class="content-grid">
+        <section class="section" aria-labelledby="conditions-heading">
+          <h2 id="conditions-heading">Current conditions</h2>
+          <p id="conditions-status" class="status" role="status" aria-live="polite">
+            Choose a fishing spot to see its weather.
+          </p>
+          <dl class="conditions-list">
+            <div>
+              <dt>Temperature</dt>
+              <dd id="temperature">—</dd>
+            </div>
+            <div>
+              <dt>Wind</dt>
+              <dd id="wind">—</dd>
+            </div>
+            <div>
+              <dt>Conditions</dt>
+              <dd id="weather-description">—</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="section" aria-labelledby="spot-details-heading">
+          <h2 id="spot-details-heading">Spot details</h2>
+          <p id="spot-description">Choose a spot to see its description.</p>
+          <p><strong>Water:</strong> <span id="water-body">—</span></p>
+          <p><strong>Ways to fish:</strong> <span id="fishing-methods">—</span></p>
+        </section>
+
+        <section class="section" aria-labelledby="recommendations-heading">
+          <h2 id="recommendations-heading">Fishing tips</h2>
+          <p id="recommendations-status">Choose a spot to see suggested tips.</p>
+          <ul id="fishing-tips">
+            <li>Tips for your selected spot will appear here.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="rigs-heading">
+          <h2 id="rigs-heading">Suggested rigs</h2>
+          <div id="suggested-rigs" class="rig-list">
+            <p>Rig suggestions for your selected spot will appear here.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Check local access notices and current Texas fishing regulations before your trip.</p>
+    </footer>
+  </body>
+</html>

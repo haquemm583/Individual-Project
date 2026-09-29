@@ -1,0 +1,171 @@
+:root {
+  color-scheme: light;
+  --page: #faf8f5;
+  --surface: #ffffff;
+  --text: #292524;
+  --muted: #625b55;
+  --border: #ded8d1;
+  --accent: #52715c;
+  --focus: #b45309;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.site-header,
+.site-footer {
+  padding: 1rem max(1.25rem, calc((100% - 64rem) / 2));
+}
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header p,
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.page-content {
+  width: min(100% - 2.5rem, 64rem);
+  margin: 2rem auto;
+}
+
+.spot-picker,
+.section {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+}
+
+.spot-picker {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+}
+
+.spot-picker > div p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-weight: 600;
+}
+
+select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #8a8178;
+  border-radius: 0.375rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.status {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.conditions-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.conditions-list dt {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.conditions-list dd {
+  margin: 0.25rem 0 0;
+  font-weight: 600;
+}
+
+.rig-list > :last-child,
+.section > :last-child {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 40rem) {
+  .site-header {
+    display: block;
+  }
+
+  .site-header p {
+    margin-top: 0.25rem;
+  }
+
+  .page-content {
+    margin-top: 1.25rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conditions-list {
+    grid-template-columns: 1fr;
+  }
+}

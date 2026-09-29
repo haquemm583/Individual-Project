@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "lastResearched": "2026-09-28",
+  "region": "Corpus Christi, Texas",
+  "timezone": "America/Chicago",
+  "notes": {
+    "coordinates": "Representative locations for area weather lookups, not navigation waypoints. Coordinate provenance is recorded for each spot.",
+    "recommendations": "Rig choices are general suggestions inferred from fishing access and TPWD technique guidance. They are not reports of current catches or predictions of fishing success.",
+    "conditions": "Fetch current weather separately. This file contains no live weather, tides, water temperatures, or closure status.",
+    "access": "Use each visitor information page for current access details, fees, and alerts."
+  },
+  "spots": [
+    {
+      "id": "cole-park-pier",
+      "name": "Cole Park Pier",
+      "latitude": 27.7754,
+      "longitude": -97.3851,
+      "coordinateNote": "TCEQ monitoring station named for Cole Park Pier; published in NAD83 with no stated accuracy. Used as an approximate weather location, not the pier entrance.",
+      "coordinateSourceId": "cole-coordinates",
+      "waterBody": "Corpus Christi Bay",
+      "waterType": "saltwater",
+      "setting": "bay-pier",
+      "fishingMethods": [
+        "pier"
+      ],
+      "description": "A city fishing pier on Corpus Christi Bay with seating, lights, rod holders, and fish-cleaning facilities.",
+      "access": {
+        "location": "Cole Park, Ocean Drive, Corpus Christi, Texas",
+        "summary": "Walk onto the pier from Cole Park. Visit Corpus Christi lists pier access as free.",
+        "amenities": [
+          "seating",
+          "lighting",
+          "rod holders",
+          "fish-cleaning stations"
+        ],
+        "visitorInfoUrl": "https://www.visitcorpuschristi.com/blog/post/where-to-fish-without-a-boat-in-corpus-christi/"
+      },
+      "suggestedRigIds": [
+        "popping-cork",
+        "bottom-rig"
+      ],
+      "tips": [
+        "For a general trout setup, try shrimp beneath a popping cork and adjust the bait depth and retrieve.",
+        "When targeting fish feeding near the bottom, consider a bottom rig instead."
+      ],
+      "sourceIds": [
+        "corpus-fishing-access",
+        "cole-coordinates",
+        "tpwd-trout-rigs"
+      ]
+    },
+    {
+      "id": "mustang-island-state-park",
+      "name": "Mustang Island State Park",
+      "latitude": 27.672162,
+      "longitude": -97.175309,
+      "coordinateNote": "Park location published by TPWD. This represents the park, not a specific beach casting position or bayside launch.",
+      "coordinateSourceId": "mustang-park",
+      "waterBody": "Gulf coast and Corpus Christi Bay",
+      "waterType": "saltwater",
+      "setting": "beach-and-bay",
+      "fishingMethods": [
+        "surf",
+        "kayak"
+      ],
+      "description": "A coastal state park with beach fishing and bayside paddling trails through shallow fishing areas.",
+      "access": {
+        "location": "9394 State Highway 361, Corpus Christi, TX 78418",
+        "summary": "Use the park's visitor information and maps to choose beach access or a bayside paddling route. Day-use entry fees apply, and TPWD recommends reservations because the park can reach capacity.",
+        "amenities": [
+          "camping",
+          "restrooms",
+          "showers"
+        ],
+        "visitorInfoUrl": "https://tpwd.texas.gov/state-parks/mustang-island"
+      },
+      "suggestedRigIds": [
+        "bottom-rig",
+        "popping-cork",
+        "weedless-spoon"
+      ],
+      "tips": [
+        "For surf fishing, a bottom rig with shrimp is a general starting option.",
+        "For shallow bayside fishing, consider shrimp under a popping cork.",
+        "Where vegetation catches exposed hooks, a weedless spoon is an option for targeting red drum."
+      ],
+      "sourceIds": [
+        "mustang-park",
+        "tpwd-black-drum",
+        "tpwd-red-drum",
+        "tpwd-trout-rigs"
+      ]
+    },
+    {
+      "id": "bird-island-basin",
+      "name": "Bird Island Basin Day-use Area",
+      "latitude": 27.46644,
+      "longitude": -97.3135,
+      "coordinateNote": "Day-use area coordinates published by the National Park Service. The motorboat ramp is a separate site.",
+      "coordinateSourceId": "bird-island-day-use",
+      "waterBody": "Laguna Madre",
+      "waterType": "saltwater",
+      "setting": "shallow-lagoon",
+      "fishingMethods": [
+        "wade",
+        "kayak"
+      ],
+      "description": "A Laguna Madre access point within Padre Island National Seashore for fishing and launching paddle craft from the shoreline.",
+      "access": {
+        "location": "Bird Island Basin, Padre Island National Seashore, Texas",
+        "summary": "The day-use area has gravel parking and shoreline access for paddle craft. Motorboats use the separate Bird Island Basin Boat Ramp.",
+        "amenities": [
+          "parking",
+          "picnic tables",
+          "shade structures",
+          "vault toilets",
+          "paddle-craft launch"
+        ],
+        "visitorInfoUrl": "https://www.nps.gov/places/bird-island-basin-day-use-area.htm"
+      },
+      "suggestedRigIds": [
+        "popping-cork",
+        "weedless-spoon",
+        "bottom-rig"
+      ],
+      "tips": [
+        "Try shrimp under a popping cork as a general shallow-water setup for trout or red drum.",
+        "Consider a weedless spoon when targeting red drum around submerged or floating vegetation.",
+        "A bottom rig is another option when targeting black drum."
+      ],
+      "sourceIds": [
+        "bird-island-day-use",
+        "corpus-fishing-access",
+        "tpwd-red-drum",
+        "tpwd-black-drum",
+        "tpwd-trout-rigs"
+      ]
+    },
+    {
+      "id": "indian-point-pier",
+      "name": "Indian Point Pier",
+      "latitude": 27.853202,
+      "longitude": -97.354339,
+      "coordinateNote": "Published pier coordinates from a third-party coordinate directory; used as an approximate area weather location.",
+      "coordinateSourceId": "indian-point-coordinates",
+      "waterBody": "Corpus Christi Bay",
+      "waterType": "saltwater",
+      "setting": "bay-pier",
+      "fishingMethods": [
+        "pier"
+      ],
+      "description": "A fishing pier in Portland with fish-cleaning stations and a picnic area at Indian Point Park.",
+      "access": {
+        "location": "Indian Point Park, Highway 181, Portland, Texas",
+        "summary": "Access the pier from Indian Point Park. The city's parks directory lists the park and pier as open around the clock; check for local notices before visiting.",
+        "amenities": [
+          "fish-cleaning stations",
+          "picnic area",
+          "birding platforms"
+        ],
+        "visitorInfoUrl": "https://www.portlandtx.com/489/City-Parks"
+      },
+      "suggestedRigIds": [
+        "popping-cork",
+        "bottom-rig"
+      ],
+      "tips": [
+        "For trout, try shrimp under a popping cork and vary the bait depth.",
+        "Consider shrimp on a bottom rig when targeting black drum."
+      ],
+      "sourceIds": [
+        "portland-parks",
+        "indian-point-coordinates",
+        "corpus-fishing-access",
+        "tpwd-trout-rigs",
+        "tpwd-black-drum"
+      ]
+    },
+    {
+      "id": "philip-dimmitt-pier",
+      "name": "Philip Dimmitt Municipal Pier",
+      "latitude": 27.669556,
+      "longitude": -97.269556,
+      "coordinateNote": "Converted from Fishbrain's published 27 degrees 40 minutes 10.4 seconds N, 97 degrees 16 minutes 10.4 seconds W. Third-party approximate weather location.",
+      "coordinateSourceId": "dimmitt-coordinates",
+      "waterBody": "Laguna Madre",
+      "waterType": "saltwater",
+      "setting": "lagoon-pier",
+      "fishingMethods": [
+        "pier"
+      ],
+      "description": "A municipal fishing pier in Flour Bluff with lighting, benches, and fish-cleaning stations.",
+      "access": {
+        "location": "Jester Street, Flour Bluff, Corpus Christi, Texas",
+        "summary": "Visit Corpus Christi lists this municipal pier as free to use.",
+        "amenities": [
+          "lighting",
+          "benches",
+          "fish-cleaning stations"
+        ],
+        "visitorInfoUrl": "https://www.visitcorpuschristi.com/blog/post/where-to-fish-without-a-boat-in-corpus-christi/"
+      },
+      "suggestedRigIds": [
+        "popping-cork",
+        "bottom-rig"
+      ],
+      "tips": [
+        "Try shrimp beneath a popping cork for trout, adjusting the depth to the water you are fishing.",
+        "A bottom rig offers an alternative presentation for fish feeding near the bottom."
+      ],
+      "sourceIds": [
+        "corpus-fishing-access",
+        "dimmitt-coordinates",
+        "dimmitt-location",
+        "tpwd-trout-rigs"
+      ]
+    },
+    {
+      "id": "packery-channel-nature-park",
+      "name": "Packery Channel Nature Park",
+      "latitude": 27.628192,
+      "longitude": -97.217147,
+      "coordinateNote": "Converted from the shoreline project's published site coordinates: 27 degrees 37 minutes 41.49 seconds N, 97 degrees 13 minutes 1.73 seconds W. Represents the park shoreline, not the Gulf jetties.",
+      "coordinateSourceId": "packery-project-coordinates",
+      "waterBody": "Packery Channel",
+      "waterType": "saltwater",
+      "setting": "channel-shoreline",
+      "fishingMethods": [
+        "bank",
+        "wade",
+        "kayak"
+      ],
+      "description": "A park on the Laguna Madre side of North Padre Island with shoreline fishing access and kayak launch areas.",
+      "access": {
+        "location": "Packery Channel Nature Park, North Padre Island, Corpus Christi, Texas",
+        "summary": "Use the park's shoreline access or kayak launches. This is separate from the Gulf-side Packery Channel jetties. Check county notices for access changes associated with shoreline improvements.",
+        "amenities": [
+          "shoreline parking",
+          "kayak launches",
+          "picnic area",
+          "benches",
+          "birding boardwalk",
+          "pavilion"
+        ],
+        "visitorInfoUrl": "https://www.nuecesbeachparks.com/padre-balli-park/packery-channel-nature-park"
+      },
+      "suggestedRigIds": [
+        "popping-cork",
+        "weedless-spoon",
+        "bottom-rig"
+      ],
+      "tips": [
+        "For shallow-water fishing, try shrimp under a popping cork.",
+        "Consider a weedless spoon where vegetation interferes with exposed hooks.",
+        "Use a bottom rig when you want to present bait near the bottom."
+      ],
+      "sourceIds": [
+        "packery-county-park",
+        "packery-project-coordinates",
+        "corpus-fishing-access",
+        "tpwd-trout-rigs",
+        "tpwd-red-drum"
+      ]
+    }
+  ],
+  "rigs": [
+    {
+      "id": "popping-cork",
+      "name": "Popping cork with shrimp",
+      "targetSpecies": [
+        "spotted seatrout",
+        "red drum"
+      ],
+      "components": [
+        "popping cork",
+        "leader",
+        "hook",
+        "shrimp"
+      ],
+      "description": "Suspend shrimp below a cork. Periodically pop the cork, then pause; vary the bait depth and retrieve.",
+      "useWhen": "A general option for shallow bay or lagoon fishing.",
+      "sourceIds": [
+        "tpwd-trout-rigs",
+        "tpwd-red-drum"
+      ]
+    },
+    {
+      "id": "bottom-rig",
+      "name": "Bottom rig with shrimp",
+      "targetSpecies": [
+        "black drum",
+        "spotted seatrout"
+      ],
+      "components": [
+        "sinker",
+        "leader with hook drop",
+        "hook",
+        "shrimp"
+      ],
+      "description": "Use a sinker and a hook on a dropper to present bait near the bottom.",
+      "useWhen": "A general option for bank or surf fishing, or when fish are feeding near the bottom.",
+      "sourceIds": [
+        "tpwd-black-drum",
+        "tpwd-trout-rigs"
+      ]
+    },
+    {
+      "id": "weedless-spoon",
+      "name": "Weedless spoon",
+      "targetSpecies": [
+        "red drum"
+      ],
+      "components": [
+        "leader",
+        "weedless spoon lure"
+      ],
+      "description": "A shallow-running artificial lure with a guarded hook for fishing around vegetation.",
+      "useWhen": "Consider for red drum on grass flats, especially where vegetation interferes with exposed hooks.",
+      "sourceIds": [
+        "tpwd-red-drum"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "corpus-fishing-access",
+      "publisher": "Visit Corpus Christi",
+      "title": "Where to Fish Without a Boat in Corpus Christi",
+      "url": "https://www.visitcorpuschristi.com/blog/post/where-to-fish-without-a-boat-in-corpus-christi/",
+      "supports": [
+        "Cole Park Pier amenities and free access",
+        "Bird Island Basin wade and kayak access",
+        "Indian Point Pier fishing and water body",
+        "Philip Dimmitt Pier amenities and free access",
+        "Packery Channel Nature Park bank, wade, and kayak fishing"
+      ]
+    },
+    {
+      "id": "cole-coordinates",
+      "publisher": "Water Quality Portal / Texas Commission on Environmental Quality",
+      "title": "Corpus Christi Bay at Cole Park Pier monitoring station TCEQMAIN-21051",
+      "url": "https://www.waterqualitydata.us/provider/STORET/TCEQMAIN/TCEQMAIN-21051/",
+      "supports": [
+        "Cole Park Pier area coordinates and NAD83 datum",
+        "Corpus Christi Bay water body"
+      ]
+    },
+    {
+      "id": "mustang-park",
+      "publisher": "Texas Parks and Wildlife Department",
+      "title": "Mustang Island State Park",
+      "url": "https://tpwd.texas.gov/state-parks/mustang-island",
+      "supports": [
+        "park coordinates and address",
+        "surf and bayside kayak fishing",
+        "facilities and visitor access"
+      ]
+    },
+    {
+      "id": "bird-island-day-use",
+      "publisher": "National Park Service",
+      "title": "Bird Island Basin Day-use Area",
+      "url": "https://www.nps.gov/places/bird-island-basin-day-use-area.htm",
+      "supports": [
+        "day-use coordinates",
+        "Laguna Madre shoreline access",
+        "amenities",
+        "separate motorboat ramp"
+      ]
+    },
+    {
+      "id": "tpwd-trout-rigs",
+      "publisher": "Texas Parks and Wildlife Department",
+      "title": "Spotted Seatrout - How to Catch",
+      "url": "https://tpwd.texas.gov/publications/pwdpubs/media/pwd_br_v3400_044_seatrout.pdf",
+      "supports": [
+        "popping cork and shrimp technique",
+        "bottom rig for bottom-feeding trout"
+      ]
+    },
+    {
+      "id": "tpwd-red-drum",
+      "publisher": "Texas Parks and Wildlife Department",
+      "title": "Red Drum (Sciaenops ocellatus)",
+      "url": "https://tpwd.texas.gov/huntwild/wild/species/reddrum/",
+      "supports": [
+        "shrimp under a popping cork",
+        "weedless spoons around vegetation"
+      ]
+    },
+    {
+      "id": "tpwd-black-drum",
+      "publisher": "Texas Parks and Wildlife Department",
+      "title": "Black Drum (Pogonias cromis)",
+      "url": "https://tpwd.texas.gov/huntwild/wild/species/blackdrum/",
+      "supports": [
+        "bottom rigs for bank and surf fishing",
+        "shrimp bait"
+      ]
+    },
+    {
+      "id": "portland-parks",
+      "publisher": "City of Portland",
+      "title": "City Parks",
+      "url": "https://www.portlandtx.com/489/City-Parks",
+      "supports": [
+        "Indian Point Park and Pier location, amenities, and listed hours"
+      ]
+    },
+    {
+      "id": "indian-point-coordinates",
+      "publisher": "Find Latitude and Longitude",
+      "title": "Indian Point Pier, Portland, TX",
+      "url": "https://www.findlatitudeandlongitude.com/r/Indian%2BPoint%2BPier%2C%2BPortland%2C%2BTX%2B78374%2C%2BUSA/692283/",
+      "supports": [
+        "Approximate Indian Point Pier coordinates"
+      ]
+    },
+    {
+      "id": "dimmitt-coordinates",
+      "publisher": "Fishbrain",
+      "title": "Philip Dimitt Muncipal Fishing Pier",
+      "url": "https://fishbrain.com/fishing-waters/-nYYlE5R/philip-dimitt-muncipal-fishing-pier",
+      "supports": [
+        "Approximate Philip Dimmitt Pier coordinates"
+      ]
+    },
+    {
+      "id": "dimmitt-location",
+      "publisher": "Corpus Christi Caller-Times via Yahoo News",
+      "title": "City of Corpus Christi celebrates reopening of Philip Dimmitt Pier and Park in Flour Bluff",
+      "url": "https://www.yahoo.com/news/city-corpus-christi-celebrates-reopening-175247023.html",
+      "supports": [
+        "Jester Street location and Laguna Madre water body"
+      ]
+    },
+    {
+      "id": "packery-county-park",
+      "publisher": "Nueces County Coastal Parks",
+      "title": "Packery Channel Nature Park",
+      "url": "https://www.nuecesbeachparks.com/padre-balli-park/packery-channel-nature-park",
+      "supports": [
+        "Laguna Madre side of North Padre Island",
+        "Shoreline parking, kayak launches, and park amenities"
+      ]
+    },
+    {
+      "id": "packery-project-coordinates",
+      "publisher": "U.S. Army Corps of Engineers / Nueces County",
+      "title": "Packery Channel Nature Park Shoreline Enhancement Project - October 31, 2024 plans",
+      "url": "https://www.swg.usace.army.mil/Portals/26/docs/regulatory/PN%20Nov/SWG-2024-00549_20241118_Figures.pdf?ver=tnGKb23uqXK4n_UO6dQd4w%3D%3D",
+      "supports": [
+        "Published shoreline project coordinates",
+        "Planned shoreline enhancements; not proof of completion"
+      ]
+    }
+  ]
+}
