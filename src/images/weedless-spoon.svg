@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220">
+  <title>Weedless spoon lure with guarded hook</title>
+  <g fill="none" stroke="#52715c" stroke-width="3">
+    <path d="M108 12v65"/>
+    <ellipse cx="108" cy="113" rx="19" ry="36" fill="#faf8f5"/>
+    <path d="M108 149v21a13 13 0 0 0 26 0v-15l-6 7M116 125l18 30"/>
+    <path d="M30 190q-10-35-18-40m18 40q0-25 13-36m252 36q-10-35-18-40m18 40q0-25 13-36" stroke="#ded8d1"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#292524">
+    <text x="175" y="38">Leader</text>
+    <text x="175" y="113">Spoon lure</text>
+    <text x="175" y="162">Guarded hook</text>
+    <text x="20" y="215">Schematic · for fishing near vegetation</text>
+  </g>
+</svg>

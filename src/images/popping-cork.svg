@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220">
+  <title>Popping cork and shrimp schematic</title>
+  <g fill="none" stroke="#52715c" stroke-width="3">
+    <path d="M110 12V63M110 98V167"/>
+    <ellipse cx="110" cy="80" rx="13" ry="20" fill="#faf8f5"/>
+    <path d="M110 167v17a12 12 0 0 0 24 0v-8l-6 6"/>
+    <path d="M20 82H90m40 0h205" stroke="#ded8d1"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#292524">
+    <text x="160" y="35">Main line</text>
+    <text x="160" y="77">Cork at surface</text>
+    <text x="160" y="134">Leader</text>
+    <text x="160" y="186">Hook with shrimp</text>
+    <text x="20" y="215">Schematic · adjust leader depth</text>
+  </g>
+</svg>

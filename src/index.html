@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Local fishing spots, weather, and simple fishing tips for Corpus Christi.">
     <title>CorpusCast | Corpus Christi fishing</title>
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="app.css">
     <script src="app.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to fishing dashboard</a>
     <header class="site-header">
       <a class="site-name" href="#main">CorpusCast</a>
       <p>Fishing around Corpus Christi</p>
@@ -21,18 +23,22 @@
           <p>Select a location to see its conditions and fishing notes.</p>
         </div>
 
-        <label for="spot-select">Fishing spot</label>
-        <select id="spot-select" name="spot">
+        <label for="spotsDropdown">Fishing spot</label>
+        <select id="spotsDropdown" name="spot" disabled>
           <option value="">Loading fishing spots…</option>
         </select>
         <p id="spot-status" class="status" role="status" aria-live="polite">
           Fishing spots will appear here.
         </p>
+        <button id="retry-spots" type="button" hidden>Retry loading spots</button>
       </section>
 
       <div class="content-grid">
         <section class="section" aria-labelledby="conditions-heading">
-          <h2 id="conditions-heading">Current conditions</h2>
+          <h2 id="conditions-heading">Weather</h2>
+          <label for="forecast-hour">Compare upcoming hours</label>
+          <input id="forecast-hour" type="range" min="0" max="12" value="0" step="1" disabled aria-describedby="forecast-label">
+          <output id="forecast-label" for="forecast-hour">Waiting for weather</output>
           <p id="conditions-status" class="status" role="status" aria-live="polite">
             Choose a fishing spot to see its weather.
           </p>
@@ -49,7 +55,15 @@
               <dt>Conditions</dt>
               <dd id="weather-description">—</dd>
             </div>
+            <div>
+              <dt>Feels like</dt>
+              <dd id="feels-like">—</dd>
+            </div>
           </dl>
+          <label for="wind-meter">Wind speed (0–40 mph scale)</label>
+          <meter id="wind-meter" min="0" max="40" value="0" hidden></meter>
+          <button id="refresh-weather" type="button" disabled>Refresh weather</button>
+          <p class="weather-credit">Weather estimates from <a href="https://open-meteo.com/">Open-Meteo</a>. Times are local to Corpus Christi.</p>
         </section>
 
         <section class="section" aria-labelledby="spot-details-heading">
@@ -57,11 +71,13 @@
           <p id="spot-description">Choose a spot to see its description.</p>
           <p><strong>Water:</strong> <span id="water-body">—</span></p>
           <p><strong>Ways to fish:</strong> <span id="fishing-methods">—</span></p>
+          <p><a id="access-link" href="https://www.visitcorpuschristi.com/">Visitor information</a></p>
         </section>
 
         <section class="section" aria-labelledby="recommendations-heading">
           <h2 id="recommendations-heading">Fishing tips</h2>
-          <p id="recommendations-status">Choose a spot to see suggested tips.</p>
+          <p id="recommendations-status" aria-live="polite">Choose a spot to see suggested tips.</p>
+          <p id="timing-tip"></p>
           <ul id="fishing-tips">
             <li>Tips for your selected spot will appear here.</li>
           </ul>
@@ -69,6 +85,7 @@
 
         <section class="section" aria-labelledby="rigs-heading">
           <h2 id="rigs-heading">Suggested rigs</h2>
+          <p>Open a rig to see its components and a simple diagram.</p>
           <div id="suggested-rigs" class="rig-list">
             <p>Rig suggestions for your selected spot will appear here.</p>
           </div>
@@ -78,6 +95,8 @@
 
     <footer class="site-footer">
       <p>Check local access notices and current Texas fishing regulations before your trip.</p>
+      <p>Suggestions use basic weather rules and general <a href="https://tpwd.texas.gov/education/angler-education/learn-to-fish">TPWD fishing guidance</a>; they do not predict catches or assess water conditions.</p>
     </footer>
+    <noscript><p>This dashboard needs JavaScript to load fishing spots and weather.</p></noscript>
   </body>
 </html>

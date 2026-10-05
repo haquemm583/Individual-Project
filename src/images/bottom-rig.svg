@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220">
+  <title>Bottom rig with a hook drop and sinker</title>
+  <g fill="none" stroke="#52715c" stroke-width="3">
+    <path d="M90 12V173M90 100h50v22a10 10 0 0 0 20 0v-8l-5 5"/>
+    <path d="M90 169l-12 25h24z" fill="#faf8f5"/>
+    <path d="M20 197h315" stroke="#ded8d1"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#292524">
+    <text x="180" y="34">Main line</text>
+    <text x="180" y="82">Leader</text>
+    <text x="180" y="115">Hook drop</text>
+    <text x="180" y="139">Hook with shrimp</text>
+    <text x="180" y="183">Sinker at bottom</text>
+    <text x="20" y="215">Schematic · not to scale</text>
+  </g>
+</svg>
